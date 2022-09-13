@@ -4,7 +4,7 @@ import argparse
 from train import evaluate, load_model
 from data import DerivativeLanguage
 from utils import set_seed
-
+from torchsummary import summary
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("dirpath", type=str)
@@ -17,3 +17,4 @@ if __name__ == "__main__":
     pairs = PolynomialLanguage.load_pairs(args.data_path)
     model = load_model(args.dirpath, args.model_ckpt)
     evaluate(model, pairs)
+    summary(model)
