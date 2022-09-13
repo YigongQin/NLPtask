@@ -361,7 +361,7 @@ def train(
 ):
     set_seed(seed)
 
-    src_lang, trg_lang = PolynomialLanguage.create_vocabs(pairs)
+    src_lang, trg_lang = DerivativeLanguage.create_vocabs(pairs)
     train_pairs, val_pairs = train_test_split(
         pairs, train_test_split_ratio=train_val_split_ratio
     )
@@ -475,8 +475,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     os.makedirs(args.dirpath, exist_ok=False)
-    train_set_pairs = PolynomialLanguage.load_pairs(args.train_path)
-    test_set_pairs = PolynomialLanguage.load_pairs(args.test_path)
+    train_set_pairs = DerivativeLanguage.load_pairs(args.train_path)
+    test_set_pairs = DerivativeLanguage.load_pairs(args.test_path)
     train(
         args.dirpath,
         train_set_pairs,
