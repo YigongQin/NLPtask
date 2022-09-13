@@ -57,7 +57,7 @@ class Language:
 
 class PolynomialLanguage(Language):
     def sentence_to_words(self, sentence):
-        return re.findall(r"sin|cos|exp|\d|\w|\^|\/|\(|\)|\+|-|\*+", sentence.strip().lower())
+        return re.findall(r"sin|cos|exp|\d+|\w|\^|\/|\(|\)|\+|-|\*+", sentence.strip().lower())
 
     def words_to_sentence(self, words):
         return "".join(words)
