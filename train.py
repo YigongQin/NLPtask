@@ -10,7 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 from pytorch_lightning.callbacks import ModelCheckpoint
 from tqdm import tqdm
 
-from data import PolynomialLanguage, train_test_split
+from data import DerivativeLanguage, train_test_split
 from utils import get_device, set_seed, score
 from layers import Encoder, Decoder
 

@@ -55,7 +55,7 @@ class Language:
         return src_lang, trg_lang
 
 
-class PolynomialLanguage(Language):
+class DerivativeLanguage(Language):
     def sentence_to_words(self, sentence):
         return re.findall(r"sin|cos|exp|\d+|\w|\^|\/|\(|\)|\+|-|\*+", sentence.strip().lower())
 

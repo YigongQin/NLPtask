@@ -2,7 +2,7 @@
 import argparse
 
 from train import evaluate, load_model
-from data import PolynomialLanguage
+from data import DerivativeLanguage
 from utils import set_seed
 
 if __name__ == "__main__":
