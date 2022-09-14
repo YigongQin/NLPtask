@@ -21,8 +21,8 @@ def score(true_derivative: str, predicted_derivative: str) -> int:
 # --------- PLEASE FILL THIS IN --------- #
 def predict(functions: str, model):
     
-    prd_sentences, _, _ = model.predict([functions])
-    return prd_sentences[0]
+    prd_sentences, _, _ = model.predict(functions)
+    return prd_sentences
 
 
 # ----------------- END ----------------- #
@@ -32,7 +32,7 @@ def main(filepath: str = "test.txt"):
     """load, inference, and evaluate"""
     functions, true_derivatives = load_file(filepath)
     model = load_model('./models/', "model.ckpt")
-    predicted_derivatives = [predict(f, model) for f in functions]
+    predicted_derivatives = predict(functions, model) 
     scores = [score(td, pd) for td, pd in zip(true_derivatives, predicted_derivatives)]
     print('\n')
     print(np.mean(scores))
