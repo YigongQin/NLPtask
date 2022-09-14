@@ -473,7 +473,7 @@ if __name__ == "__main__":
     parser = Seq2Seq.add_model_specific_args(parser)
     parser = pl.Trainer.add_argparse_args(parser)
     args = parser.parse_args()
-
+    os.system("python3 data.py")
     os.makedirs(args.dirpath, exist_ok=False)
     train_set_pairs = DerivativeLanguage.load_pairs(args.train_path)
     test_set_pairs = DerivativeLanguage.load_pairs(args.test_path)
