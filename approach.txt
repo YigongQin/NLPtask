@@ -1,0 +1,14 @@
+Model: sequence-to-sequence transformer architecture
+       github source: https://github.com/bentrevett/pytorch-seq2seq/blob/master/6%20-%20Attention%20is%20All%20You%20Need.ipynb
+
+Data processing, training setup:
+       github source: https://github.com/jaymody/seq2seq-polynomial
+
+My implementation:
+	   break each line in the train.txt into the following tokens: "sin", "cos", "exp", "*", "+", "-", "/", "^", "(", ")", letters "a-z", and numbers (not breakup)
+
+Training command line:
+
+       python3 train.py "models/best" --gpus 1 --gradient_clip_val 1 --max_epochs 16 --val_check_interval 0.2
+
+16 epochs for 66 mins on 1 Quadro RTX 5000 GPU 
