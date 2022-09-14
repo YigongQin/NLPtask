@@ -1,0 +1,17 @@
+d(60cos^4(c^7)*exp^(13t))/dt=780cos^4(c^7)*exp^(13t)
+d(8y^9*exp^(3y))/dy=72y^8*exp^(3y)+24y^9*exp^(3y)
+d(3exp^(17u)+9exp^(4u))/du=51exp^(17u)+36exp^(4u)
+d(126x^3*exp^(3r))/dx=378x^2*exp^(3r)
+d(9exp^(18v)+9exp^(8v))/dv=162exp^(18v)+72exp^(8v)
+d(10sin(20o^4))/do=800o^3*cos(20o^4)
+d(60cos^4(c^7)*exp^(13t))/dt=780cos^4(c^7)*exp^(13t)
+d(4exp^(10m)+13exp^(2m))/dm=40exp^(10m)+26exp^(2m)
+d(35o^10*sin^6(16c^8))/do=350o^9*sin^6(16c^8)
+d(72exp^(18p)*sin^4(4m^8))/dp=1296exp^(18p)*sin^4(4m^8)
+d(3exp^(10a)+3exp^(20a))/da=30exp^(10a)+60exp^(20a)
+d(36exp^(6u)*e^2)/de=72exp^(6u)*e
+d(11exp^(20n)+17exp^(13n))/dn=220exp^(20n)+221exp^(13n)
+d(13exp^(6t)*t^3)/dt=78exp^(6t)*t^3+39exp^(6t)*t^2
+d(187cos^6(12e^7)*m^6)/dm=1122cos^6(12e^7)*m^5
+d(sin^4(17u^5))/du=340u^4*cos(17u^5)*sin^3(17u^5)
+d(80r^4*sin(15x))/dr=320r^3*sin(15x)
